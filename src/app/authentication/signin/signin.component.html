@@ -1,0 +1,15 @@
+<form [formGroup]="signInForm" (ngSubmit)="onSubmit()">  
+    <div >
+        <mat-form-field>
+            <input matInput placeholder="Enter your email" formControlName="email" >
+        </mat-form-field>
+      </div>
+      <div >
+        <mat-form-field>
+            <input matInput placeholder="Enter your Password" type="password" formControlName="password">
+        </mat-form-field>
+      </div>
+      <div>
+        <button color="primary" type="submit" mat-raised-button>Login</button>
+      </div>
+</form>

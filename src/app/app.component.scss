@@ -1,0 +1,15 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+
+}
+.page-wrapper{
+    height: calc(100vh-60px);
+}
+
+.fill-space{
+    flex:1 1 auto;
+}
+mat-toolbar{
+    width: 100%;
+}
