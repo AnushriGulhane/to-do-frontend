@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from 'src/app/core/services/api.service';
 
 @Component({
   selector: 'app-task',
@@ -7,9 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TaskComponent implements OnInit {
 
-  constructor() { }
+  tasks:[];
+  constructor(
+    private api:ApiService
+  ) { }
 
   ngOnInit(): void {
+    this.getTasks();
+  }
+
+  getTasks(){
+    this.api.get(`/user/task`).subscribe(
+      (res:any)=>{
+        console.log(res);
+      },
+      (err)=>{
+        console.log(err)
+      })
+
   }
 
 }

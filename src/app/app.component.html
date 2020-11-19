@@ -4,10 +4,14 @@
     To Do App
   </span>
   <span class="fill-space"></span>
-  <div>
-    <a [routerLink]="['/auth/login']"  routerLinkActive="active">Login</a>
-    <a [routerLink]="['/auth/register']"  routerLinkActive="active">Register</a>
-  </div>
+  <ul class="topnav">
+    <li>
+      <a [routerLink]="['/auth/login']"  routerLinkActive="active">Login</a>
+     </li>
+    <li>
+      <a [routerLink]="['/auth/register']"  routerLinkActive="active">Register</a>
+    </li>
+  </ul>
  
 </mat-toolbar>
 <div class="page-wrpper">

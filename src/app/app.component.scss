@@ -4,7 +4,7 @@
 
 }
 .page-wrapper{
-    height: calc(100vh-60px);
+    height: calc(100vh-64px);
 }
 
 .fill-space{
@@ -12,4 +12,17 @@
 }
 mat-toolbar{
     width: 100%;
+}
+
+ul.topnav{
+    list-style-type: none;
+}
+ul.topnav li{
+    float: left;
+}
+ul.topnav li a{
+    display: block;
+    text-decoration: none;
+    padding: 14px 16px;
+    color: white;
 }
